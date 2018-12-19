@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		73DCFB9E21C8996500CD5A7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCFB9D21C8996500CD5A7D /* AppDelegate.swift */; };
-		73DCFBA021C8996500CD5A7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCFB9F21C8996500CD5A7D /* ViewController.swift */; };
 		73DCFBA321C8996500CD5A7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DCFBA121C8996500CD5A7D /* Main.storyboard */; };
 		73DCFBA521C8996600CD5A7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73DCFBA421C8996600CD5A7D /* Assets.xcassets */; };
 		73DCFBA821C8996600CD5A7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73DCFBA621C8996600CD5A7D /* LaunchScreen.storyboard */; };
+		73DCFBB021C899A900CD5A7D /* GuestDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCFBAF21C899A900CD5A7D /* GuestDataModel.swift */; };
+		73DCFBB221C8A29C00CD5A7D /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCFBB121C8A29C00CD5A7D /* AddRegistrationTableViewController.swift */; };
+		73DCFBB421C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCFBB321C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		73DCFB9A21C8996500CD5A7D /* BallasHotel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BallasHotel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73DCFB9D21C8996500CD5A7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73DCFB9F21C8996500CD5A7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73DCFBA221C8996500CD5A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73DCFBA421C8996600CD5A7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73DCFBA721C8996600CD5A7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73DCFBA921C8996600CD5A7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73DCFBAF21C899A900CD5A7D /* GuestDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDataModel.swift; sourceTree = "<group>"; };
+		73DCFBB121C8A29C00CD5A7D /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
+		73DCFBB321C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +59,10 @@
 			isa = PBXGroup;
 			children = (
 				73DCFB9D21C8996500CD5A7D /* AppDelegate.swift */,
-				73DCFB9F21C8996500CD5A7D /* ViewController.swift */,
+				73DCFBAF21C899A900CD5A7D /* GuestDataModel.swift */,
 				73DCFBA121C8996500CD5A7D /* Main.storyboard */,
+				73DCFBB321C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift */,
+				73DCFBB121C8A29C00CD5A7D /* AddRegistrationTableViewController.swift */,
 				73DCFBA421C8996600CD5A7D /* Assets.xcassets */,
 				73DCFBA621C8996600CD5A7D /* LaunchScreen.storyboard */,
 				73DCFBA921C8996600CD5A7D /* Info.plist */,
@@ -135,7 +141,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73DCFBA021C8996500CD5A7D /* ViewController.swift in Sources */,
+				73DCFBB421C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift in Sources */,
+				73DCFBB221C8A29C00CD5A7D /* AddRegistrationTableViewController.swift in Sources */,
+				73DCFBB021C899A900CD5A7D /* GuestDataModel.swift in Sources */,
 				73DCFB9E21C8996500CD5A7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
