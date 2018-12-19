@@ -9,10 +9,29 @@
 import UIKit
 
 class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
-    
-    
     var roomType: RoomType?
-    
+    var registration: Registration? {
+        guard let roomType = roomType else {return nil} // if roomType is not set, return nil, otherwise return a valid room type object.
+        let firstName = firstNameTextField.text ?? "" // ?? "" is so it does not return an optional.
+        let lastName = lastNameTextField.text ?? ""
+        let email = emailTextField.text ?? ""
+        let checkinDate = checkInDatePicker.date
+        let checkoutDate = checkOutDatePicker.date
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
+        let hasWifi = wifiSwitch.isOn
+        
+        
+        return Registration(firstName: firstName,
+                            lastName: lastName,
+                            email: email,
+                            checkInDate: checkinDate,
+                            checkOutDate: checkoutDate,
+                            numberOfAdults: numberOfAdults,
+                            numberOfChildren: numberOfChildren,
+                            roomChoice: roomType,
+                            wifiAccess: hasWifi)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,29 +110,6 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         updateRoomType()
     }
     // MARK:- Actions
-    @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem) {
-        // pring the data in the textFields
-        let firstName = firstNameTextField.text ?? "" // ?? "" is so it does not return an optional.
-        let lastName = lastNameTextField.text ?? ""
-        let email = emailTextField.text ?? ""
-        let checkinDate = checkInDatePicker.date
-        let checkoutDate = checkOutDatePicker.date
-        let numberOfAdults = Int(numberOfAdultsStepper.value)
-        let numberOfChildren = Int(numberOfChildrenStepper.value)
-        let hasWifi = wifiSwitch.isOn
-        let roomChoice = roomType?.name ?? "Not Set"
-        
-        print("Done Tapped")
-        print("first name: \(firstName)")
-        print("last name: \(lastName)")
-        print("email: \(email)")
-        print("checkin: \(checkinDate)")
-        print("checkout: \(checkoutDate)")
-        print("number of children \(numberOfChildren)")
-        print("number Of Adults: \(numberOfAdults)")
-        print("wifi switch \(hasWifi)")
-        print("roomchoice: \(roomChoice)")
-    }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
         updateDateView()
@@ -124,6 +120,9 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
     }
     
     @IBAction func wifiSwitchChanged(_ sender: UISwitch) {
+    }
+    @IBAction func cancelButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
     }
     
     // MARK: - Table View Delegate Methods

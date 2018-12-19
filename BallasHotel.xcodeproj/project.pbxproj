@@ -14,6 +14,7 @@
 		73DCFBB021C899A900CD5A7D /* GuestDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCFBAF21C899A900CD5A7D /* GuestDataModel.swift */; };
 		73DCFBB221C8A29C00CD5A7D /* AddRegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCFBB121C8A29C00CD5A7D /* AddRegistrationTableViewController.swift */; };
 		73DCFBB421C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCFBB321C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift */; };
+		73DCFBB621C9E9E400CD5A7D /* RegistrationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73DCFBB521C9E9E400CD5A7D /* RegistrationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		73DCFBAF21C899A900CD5A7D /* GuestDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestDataModel.swift; sourceTree = "<group>"; };
 		73DCFBB121C8A29C00CD5A7D /* AddRegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddRegistrationTableViewController.swift; sourceTree = "<group>"; };
 		73DCFBB321C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoomTypeTableViewController.swift; sourceTree = "<group>"; };
+		73DCFBB521C9E9E400CD5A7D /* RegistrationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				73DCFB9D21C8996500CD5A7D /* AppDelegate.swift */,
 				73DCFBAF21C899A900CD5A7D /* GuestDataModel.swift */,
+				73DCFBB521C9E9E400CD5A7D /* RegistrationTableViewController.swift */,
 				73DCFBA121C8996500CD5A7D /* Main.storyboard */,
 				73DCFBB321C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift */,
 				73DCFBB121C8A29C00CD5A7D /* AddRegistrationTableViewController.swift */,
@@ -144,6 +147,7 @@
 				73DCFBB421C9D7D300CD5A7D /* SelectRoomTypeTableViewController.swift in Sources */,
 				73DCFBB221C8A29C00CD5A7D /* AddRegistrationTableViewController.swift in Sources */,
 				73DCFBB021C899A900CD5A7D /* GuestDataModel.swift in Sources */,
+				73DCFBB621C9E9E400CD5A7D /* RegistrationTableViewController.swift in Sources */,
 				73DCFB9E21C8996500CD5A7D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
